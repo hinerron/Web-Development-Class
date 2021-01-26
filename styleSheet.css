@@ -1,0 +1,45 @@
+body {
+display: flex;
+flex-flow:wrap
+
+}
+
+button {
+    background-color: #276499;
+    border: #276499;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 20px 10px 20px;
+    line-height: 1.5;
+    text-decoration: none
+}
+
+nav, header, footer {
+    flex: 100%;
+    text-align: center;
+
+}
+
+nav {
+    background-color: #276499;
+}
+
+main {
+display: flex;
+flex: 5;
+justify-content: center;
+align-items: center;
+padding:3em 1em 3em 1em;
+text-align: center;
+
+
+
+}
+
+aside {
+    flex: 1
+}

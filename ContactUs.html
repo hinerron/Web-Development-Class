@@ -16,9 +16,31 @@
 
     <link rel="stylesheet" href="stylesheet.css">
 
-    <title>Crispy Burgers</title>
+    <title>Crispy Burger Contact</title>
     <style>
+label{
+display:inline-block;
+width:200px;
+margin-right:30px;
+text-justify: top
 
+;
+
+}
+
+input{
+
+}
+
+fieldset{
+border:none;
+width:500px;
+margin:0px auto;
+}
+
+textarea {
+            vertical-align: top;
+        }
     </style>
 </head>
 
@@ -39,11 +61,35 @@
 
     </aside>
     <main>
-        <img src="Images/Coal.jpg" width="800px">
-        <p>Here at Crispy's we like our burgers like we like our life: <strong>hard and gritty</strong>. The age of the
-            pink burger is no more. If you like it crunchy with a little snap, then come try the only burger in town
-            that's harder than your Uncle Chuck.</p>
+        <form action="ContactUs.html" method="GET">
+            <fieldset>
+            <label for="nameInput">Name:</label><input type="text" name="nameInput" /><br><br>
+            <label for="emailInput">Email:</label><input type="text" name="emailInput" /><br><br>
+            <label for="phoneInput">Phone:</label><input type="text" name="phoneInput" /><br><br>
+        
+            <label for="description">Additional Information:</label><textarea name="description" /></textarea><br><br>
+        
+        Have you been to the restaurant before?
+        Yes <input type="radio" name="answer" value:"Yes" />
+        No <input type="radio" name="answer" value:"No" /><br /><br>
+        Reason for inquiry:
+        <select name="Catering">
+            <option value="Catering">Catering</option>
+            <option value="Private Party">Private Party</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
 
+        Best days to contact you: 
+        <input type="checkbox" name="myChoices" value="M">M</input>
+        <input type="checkbox" name="myChoices" value="T">T</input>
+        <input type="checkbox" name="myChoices" value="W">W</input>
+        <input type="checkbox" name="myChoices" value="Th">Th</input>
+        <input type="checkbox" name="myChoices" value="F">F</input>
+        <input type="checkbox" name="myChoices" value="Sat">Sat</input>
+        <input type="checkbox" name="myChoices" value="Sun">Sun</input>
+        </fieldset>
+    </form>
+        
     </main>
 
     <aside>

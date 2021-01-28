@@ -16,26 +16,44 @@
 
     <link rel="stylesheet" href="stylesheet.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+
     <title>Crispy Burger Menu</title>
     <style>
+        body {
+            align-items: flex-start;
+        }
         th {
             padding: 1em 2em 1em 2em;
             text-align: center;
-        };
+            justify-content: start;
+            font-size: 18px;
+        }
 
-        h2, h6 {
-            display: flex;
+        td {
+            align-items: flex-start;
+            justify-content: flex-start;
+            text-align: center;
+            padding: 0px 5px 0px 5px;
+        }
+
+        table {
             flex: 100%;
         }
 
         main {
+
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+
         }
 
-        #menu {
-            align-items: center;
+        aside {
+
+align-items: flex-start;
+padding:3em 0em 3em 0em;
+text-align: center;
+justify-content: center;
         }
 
     </style>
@@ -50,19 +68,21 @@
     </header>
 
     <nav>
-        <button>HOME</button> 
-        <button>MENU</button> 
-        <button>CONTACT US</button>
+        <a href="Index.html">
+            <button >HOME</button>
+        </a>
+        <a href="Menu.html">
+            <button>MENU</button>
+        </a>
+        <a href="ContactUs.html">
+            <button>CONTACT US</button>
+        </a>
     </nav>
-    <aside>
 
-        Place for jumbotron or whatever
-
-    </aside>
     <main>
 <h2 id:"Menu">MENU</h2> 
-<br>
-<h6>Take well-done to the next level</h6>
+
+<h5>Take well-done to the next level</h5>
 <br>
         <table>
             <tr>
@@ -92,12 +112,12 @@
 
             </tr>
             <tr>
-                <td>Food 4 description</td>
+                <td>The best part about lentils?  They're crunchy right out of the bag.  Pattified with eggs and our secret glue ingredient, deep-fried in lard.  An affordable veggie burger if you don't count the dentist bill.</td>
                 <td>Is it really chicken?  Hard to tell when reduced to a pile of ash in a bowl before being breaded and deep fried to a perfet, chalky texture. Self-serve honey available in the backyard.  Or is that a wasp nest?</td>
                 <td>Take heat any way you can interpret it.  Cooked to a shrivelled crisp, topped with a blend of Carolina Reaper and Ghost Peppers, and sprinkled with Sodium Hydroxide for a deep burn you'll feel all the way to the emergency room.</td>
             </tr>
             <tr>
-                <td>$20</td>
+                <td>$10</td>
                 <td>$12</td>
                 <td>$10</td>
 
@@ -108,8 +128,49 @@
     </main>
 
     <aside>
+        <h2 id:"bevMenu">BEVERAGES</h2>
+        <table>
+            <tr>
+                <th>Backyard Fire</th>
+             </tr>
+            <tr>
+                <td>Gin Martini with muddled charcoal</td>
+             </tr>
+            <tr>
+                <td>$9</td>
+             </tr>
 
-        Righthand box for something.
+            <tr>
+                <th>Pucker-Up</th>
+             </tr>
+            <tr>
+               <td>A glass of bitters.  Just. Bitters.</td>
+             </tr>
+            <tr>
+                <td>$18</td>
+             </tr>
+
+             <tr>
+                <th>Battery Acid</th>
+             </tr>
+            <tr>
+               <td>Carolina Reaper infused bourbon</td>
+             </tr>
+            <tr>
+                <td>$11</td>
+             </tr>
+
+             <tr>
+                <th>Water</th>
+             </tr>
+            <tr>
+               <td>Just kidding</td>
+             </tr>
+            <tr>
+                <td>$0</td>
+             </tr>
+
+        </table>
     </aside>
 
     <footer>
@@ -117,6 +178,9 @@
         Minneapolis, MN 55406 <br>
         612.555.GOTTA.BE.A.PHONEY
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html

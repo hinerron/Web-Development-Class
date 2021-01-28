@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="stylesheet.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+
     <title>Crispy Burger Contact</title>
     <style>
 label{
@@ -28,10 +30,31 @@ text-justify: top
 
 }
 
-input{
-
+input[type=submit]{
+    background-color: #464646;
+    border: #276499;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    line-height: 1.5;
+    text-decoration: none
 }
 
+input[type=submit]:hover {
+    background-color: #d4d4d4 ;
+    color: #000000; 
+}
+
+input[type=submit]:active {
+    background-color: #ceb4b4 ;
+    color: #bd0000;
+    font-weight: bold;
+}
 fieldset{
 border:none;
 width:500px;
@@ -51,9 +74,15 @@ textarea {
     </header>
 
     <nav>
-        <button>HOME</button> 
-        <button>MENU</button> 
-        <button>CONTACT US</button>
+        <a href="Index.html">
+            <button >HOME</button>
+        </a>
+        <a href="Menu.html">
+            <button>MENU</button>
+        </a>
+        <a href="ContactUs.html">
+            <button>CONTACT US</button>
+        </a>
     </nav>
     <aside>
 
@@ -63,13 +92,16 @@ textarea {
     <main>
         <form action="ContactUs.html" method="GET">
             <fieldset>
-            <label for="nameInput">Name:</label><input type="text" name="nameInput" /><br><br>
-            <label for="emailInput">Email:</label><input type="text" name="emailInput" /><br><br>
-            <label for="phoneInput">Phone:</label><input type="text" name="phoneInput" /><br><br>
+            <label for="nameInput">Name:</label>
+            <input type="text" name="nameInput" /><br><br>
+            <label for="emailInput">Email:</label>
+            <input type="text" name="emailInput" /><br><br>
+            <label for="phoneInput">Phone:</label>
+            <input type="text" name="phoneInput" /><br><br>
         
             <label for="description">Additional Information:</label><textarea name="description" /></textarea><br><br>
         
-        Have you been to the restaurant before?
+            <label for="haveYouVisited">Have you been to the restaurant before?</label>
         Yes <input type="radio" name="answer" value:"Yes" />
         No <input type="radio" name="answer" value:"No" /><br /><br>
         Reason for inquiry:
@@ -87,6 +119,10 @@ textarea {
         <input type="checkbox" name="myChoices" value="F">F</input>
         <input type="checkbox" name="myChoices" value="Sat">Sat</input>
         <input type="checkbox" name="myChoices" value="Sun">Sun</input>
+
+        <br><br>
+
+        <input type="submit" name="submit">
         </fieldset>
     </form>
         
@@ -102,6 +138,9 @@ textarea {
         Minneapolis, MN 55406 <br>
         612.555.GOTTA.BE.A.PHONEY
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html

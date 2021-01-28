@@ -10,11 +10,15 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+
 
     <title>Crispy Burgers</title>
     <style>
@@ -22,9 +26,35 @@
             max-width: 100%;
             padding-top: 5px;
         }
+
         main {
             flex-direction: column;
             align-items: flex-start;
+        }
+
+        #intro {
+            font-size: 20px;
+            padding-top: 1em;
+        }
+
+        .jumbotron {
+            background-color: #585757;
+            color: white;
+
+        }
+
+        .carousel {
+padding-right: 10px;
+        }
+        .carousel-inner {
+            height: 44em;
+            width: 20em;
+            background-color: #585757;
+        }
+
+        .carousel-caption {
+            position: static;
+            padding: 10em 0em 10em 0em;
         }
     </style>
 </head>
@@ -36,18 +66,32 @@
     </header>
 
     <nav>
-        <button>HOME</button> 
-        <button>MENU</button> 
-        <button>CONTACT US</button>
+        <a href="Index.html">
+            <button >HOME</button>
+        </a>
+        <a href="Menu.html">
+            <button>MENU</button>
+        </a>
+        <a href="ContactUs.html">
+            <button>CONTACT US</button>
+        </a>
     </nav>
+
+    </header>
     <aside>
 
-        Place for jumbotron or whatever
-
+        <header class="jumbotron">
+            <h1>NEW LOCATION NOW OPEN!!!</h1>
+            <h4 class="font-italic">Come get fed before the Feds get us</h4>
+            <p>(Seriously. We don't have a license for any of this.)</p>
+            <br>
+            <h4>Located at: 2623 Quincy St. NE</h4>
+            <h4>Minneapolis, MN 55413</h4>
     </aside>
     <main>
+
         <img id:img-1 src="Images/Coal.jpg" >
-        <p>Here at Crispy's we like our burgers like we like our life: <strong>hard and gritty</strong>. The age of the
+        <p id="intro">Here at Crispy's we like our burgers like we like our life: <strong>hard and gritty</strong>. The age of the
             pink burger is no more. If you like it crunchy with a little snap, then come try the only burger in town
             that's harder than your Uncle Chuck.</p>
 
@@ -55,7 +99,45 @@
 
     <aside>
 
-        Righthand box for something.
+            <div id="myCarousel" class="carousel" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <div class="carousel-inner">
+          
+                <div class="item active">
+                  <div class="carousel-caption">
+                    <h3>We're opening a new location!</h3>
+                    <h4>2623 Quincy St. NE</h4>
+                    <h4>Minneapolis, MN 55413</h4>
+                  </div>
+                </div>
+          
+                <div class="item">
+                  <div class="carousel-caption">
+                    <h3>Seasonal Menu Item:</h3>
+                    <br>
+                    <h3 style="font-weight: bold">The Ice Fish</h3>
+                    <h4>Still-frozen lake trout.  On a plate.<h4>
+                  </div>
+                </div>
+              
+                <div class="item">
+                  <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                  </div>
+                </div>
+            
+              </div>
+          
+            </div>
+
+
     </aside>
 
     <footer>
@@ -63,6 +145,7 @@
         Minneapolis, MN 55406 <br>
         612.555.GOTTA.BE.A.PHONEY
     </footer>
+
 </body>
 
 </html

@@ -10,14 +10,14 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
 
     <title>Crispy Burgers</title>
@@ -30,6 +30,7 @@
         main {
             flex-direction: column;
             align-items: flex-start;
+            min-width: 30%;
         }
 
         #intro {
@@ -44,8 +45,9 @@
         }
 
         .carousel {
-padding-right: 10px;
+            padding-right: 10px;
         }
+
         .carousel-inner {
             height: 44em;
             width: 20em;
@@ -67,7 +69,11 @@ padding-right: 10px;
 
     <nav>
         <a href="Index.html">
-            <button >HOME</button>
+            <button id="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25">
+                    <path
+                        d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z">
+                    </path>
+                </svg></button>
         </a>
         <a href="Menu.html">
             <button>MENU</button>
@@ -90,8 +96,9 @@ padding-right: 10px;
     </aside>
     <main>
 
-        <img id:img-1 src="Images/Coal.jpg" >
-        <p id="intro">Here at Crispy's we like our burgers like we like our life: <strong>hard and gritty</strong>. The age of the
+        <img id:img-1 src="Images/Coal.jpg" class="img-fluid">
+        <p id="intro">Here at Crispy's we like our burgers like we like our life: <strong>hard and gritty</strong>. The
+            age of the
             pink burger is no more. If you like it crunchy with a little snap, then come try the only burger in town
             that's harder than your Uncle Chuck.</p>
 
@@ -99,43 +106,43 @@ padding-right: 10px;
 
     <aside>
 
-            <div id="myCarousel" class="carousel" data-ride="carousel">
+        <div id="myCarousel" class="carousel" data-ride="carousel">
 
-              <ol class="carousel-indicators">
+            <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
-              </ol>
-          
-              <div class="carousel-inner">
-          
+            </ol>
+
+            <div class="carousel-inner">
+
                 <div class="item active">
-                  <div class="carousel-caption">
-                    <h3>We're opening a new location!</h3>
-                    <h4>2623 Quincy St. NE</h4>
-                    <h4>Minneapolis, MN 55413</h4>
-                  </div>
+                    <div class="carousel-caption">
+                        <h3>We're opening a new location!</h3>
+                        <h4>2623 Quincy St. NE</h4>
+                        <h4>Minneapolis, MN 55413</h4>
+                    </div>
                 </div>
-          
+
                 <div class="item">
-                  <div class="carousel-caption">
-                    <h3>Seasonal Menu Item:</h3>
-                    <br>
-                    <h3 style="font-weight: bold">The Ice Fish</h3>
-                    <h4>Still-frozen lake trout.  On a plate.<h4>
-                  </div>
+                    <div class="carousel-caption">
+                        <h3>Seasonal Menu Item:</h3>
+                        <br>
+                        <h3 style="font-weight: bold">The Ice Fisher</h3>
+                        <h4>Still-frozen lake trout. On a plate.<h4>
+                    </div>
                 </div>
-              
+
                 <div class="item">
-                  <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
-                  </div>
+                    <div class="carousel-caption">
+                        <h3>Drink of the Month</h3>
+                        <h4>SG Special Brew</h4>
+                    </div>
                 </div>
-            
-              </div>
-          
+
             </div>
+
+        </div>
 
 
     </aside>

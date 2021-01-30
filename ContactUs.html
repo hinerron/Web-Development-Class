@@ -16,52 +16,51 @@
 
     <link rel="stylesheet" href="stylesheet.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
 
     <title>Crispy Burger Contact</title>
     <style>
-label{
-display:inline-block;
-width:200px;
-margin-right:30px;
-text-justify: top
+        label {
+            display: inline-block;
+            width: 200px;
+            margin-right: 30px;
+            text-justify: top;
 
-;
+        }
 
-}
+        input[type=submit] {
+            background-color: #464646;
+            border: #276499;
+            border-radius: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 1px;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 10px 30px 10px 30px;
+            line-height: 1.5;
+            text-decoration: none
+        }
 
-input[type=submit]{
-    background-color: #464646;
-    border: #276499;
-    border-radius: 5px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px 30px 10px 30px;
-    line-height: 1.5;
-    text-decoration: none
-}
+        input[type=submit]:hover {
+            background-color: #d4d4d4;
+            color: #000000;
+        }
 
-input[type=submit]:hover {
-    background-color: #d4d4d4 ;
-    color: #000000; 
-}
+        input[type=submit]:active {
+            background-color: #ceb4b4;
+            color: #bd0000;
+            font-weight: bold;
+        }
 
-input[type=submit]:active {
-    background-color: #ceb4b4 ;
-    color: #bd0000;
-    font-weight: bold;
-}
-fieldset{
-border:none;
-width:500px;
-margin:0px auto;
-}
+        fieldset {
+            border: none;
+            width: 500px;
+            margin: 0px auto;
+        }
 
-textarea {
+        textarea {
             vertical-align: top;
         }
     </style>
@@ -75,7 +74,11 @@ textarea {
 
     <nav>
         <a href="Index.html">
-            <button >HOME</button>
+            <button id="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                    <path
+                        d="M12.97 2.59a1.5 1.5 0 00-1.94 0l-7.5 6.363A1.5 1.5 0 003 10.097V19.5A1.5 1.5 0 004.5 21h4.75a.75.75 0 00.75-.75V14h4v6.25c0 .414.336.75.75.75h4.75a1.5 1.5 0 001.5-1.5v-9.403a1.5 1.5 0 00-.53-1.144l-7.5-6.363z">
+                    </path>
+                </svg></button>
         </a>
         <a href="Menu.html">
             <button>MENU</button>
@@ -86,51 +89,54 @@ textarea {
     </nav>
     <aside>
 
-        Place for jumbotron or whatever
+
 
     </aside>
     <main>
-        <form action="ContactUs.html" method="GET">
+        <form action="ContactUs.html" name="contactUs" onsubmit="return validateItems()" method="GET">
             <fieldset>
-            <label for="nameInput">Name:</label>
-            <input type="text" name="nameInput" /><br><br>
-            <label for="emailInput">Email:</label>
-            <input type="text" name="emailInput" /><br><br>
-            <label for="phoneInput">Phone:</label>
-            <input type="text" name="phoneInput" /><br><br>
-        
-            <label for="description">Additional Information:</label><textarea name="description" /></textarea><br><br>
-        
-            <label for="haveYouVisited">Have you been to the restaurant before?</label>
-        Yes <input type="radio" name="answer" value:"Yes" />
-        No <input type="radio" name="answer" value:"No" /><br /><br>
-        Reason for inquiry:
-        <select name="Catering">
-            <option value="Catering">Catering</option>
-            <option value="Private Party">Private Party</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Other">Other</option>
+                <label for="nameInput" style="font-weight: bold">Name:</label>
+                <input type="text" name="nameInput" style="font-style: italic" placeholder=" Required"/><br><br>
+                <label for="emailInput" style="font-weight: bold">Email:</label>
+                <input type="text" style="font-style: italic" placeholder=" Required" name="emailInput"/><br><br>
+                <label for="phoneInput">Phone:</label>
+                <input type="text" name="phoneInput" /><br><br>
 
-        Best days to contact you: 
-        <input type="checkbox" name="myChoices" value="M">M</input>
-        <input type="checkbox" name="myChoices" value="T">T</input>
-        <input type="checkbox" name="myChoices" value="W">W</input>
-        <input type="checkbox" name="myChoices" value="Th">Th</input>
-        <input type="checkbox" name="myChoices" value="F">F</input>
-        <input type="checkbox" name="myChoices" value="Sat">Sat</input>
-        <input type="checkbox" name="myChoices" value="Sun">Sun</input>
+                <label for="description">Additional Information:</label>
+                <textarea name="description"/></textarea><br><br>
 
-        <br><br>
-
-        <input type="submit" name="submit">
-        </fieldset>
-    </form>
+                <label for="haveYouVisited">Have you been to the restaurant before?</label>
+                Yes <input type="radio" name="answer" value:"Yes" />
+                No <input type="radio" name="answer" value:"No" /><br /><br>
+                <label for="catering">Reason for inquiry:</label>
+                <select name="Catering">
+                    <option value="Catering">Catering</option>
+                    <option value="Private Party">Private Party</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Other">Other</option>
+                </select>
         
+
+                    <label for="myChoices">Best days to contact you:</label>
+                    <input type="checkbox" name="myChoices" value="M">M</input>
+                    <input type="checkbox" name="myChoices" value="T">T</input>
+                    <input type="checkbox" name="myChoices" value="W">W</input>
+                    <input type="checkbox" name="myChoices" value="Th">Th</input>
+                    <input type="checkbox" name="myChoices" value="F">F</input>
+                    <input type="checkbox" name="myChoices" value="Sat">Sat</input>
+                    <input type="checkbox" name="myChoices" value="Sun">Sun</input>
+
+                    <br><br>
+
+                    <input type="submit" name="submit">
+            </fieldset>
+        </form>
+
     </main>
 
     <aside>
 
-        Righthand box for something.
+
     </aside>
 
     <footer>
@@ -141,6 +147,7 @@ textarea {
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/JavaScript" src="js/ContactUsForm.js"></script>
 </body>
 
 </html
